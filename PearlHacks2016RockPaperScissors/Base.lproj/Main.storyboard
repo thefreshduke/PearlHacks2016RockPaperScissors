@@ -34,11 +34,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROCK PAPER SCISSORS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV6-JQ-lsn">
                                 <rect key="frame" x="206" y="137" width="188" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.59796463815789469" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jep-La-yWN" firstAttribute="top" secondItem="WV6-JQ-lsn" secondAttribute="bottom" constant="127" id="3H9-hS-2Zu"/>
                             <constraint firstItem="WV6-JQ-lsn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4DJ-pY-yDY"/>
@@ -52,10 +52,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="Eqn-nm-u63">
             <objects>
-                <viewController id="sfu-bc-KvN" sceneMemberID="viewController">
+                <viewController id="sfu-bc-KvN" customClass="GameViewController" customModule="PearlHacks2016RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tsu-v3-fuP"/>
                         <viewControllerLayoutGuide type="bottom" id="yQh-Am-d1e"/>
@@ -74,31 +74,40 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLT-lC-uAH">
                                 <rect key="frame" x="250" y="124" width="100" height="100"/>
                                 <state key="normal" image="paper.png"/>
+                                <connections>
+                                    <action selector="activatePaper:" destination="sfu-bc-KvN" eventType="touchUpInside" id="hY2-Px-amc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF8-2D-ooh">
                                 <rect key="frame" x="120" y="124" width="100" height="100"/>
                                 <state key="normal" image="rock.png"/>
+                                <connections>
+                                    <action selector="activateRock:" destination="sfu-bc-KvN" eventType="touchUpInside" id="e0w-ad-Gth"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BO-71-cJF">
                                 <rect key="frame" x="380" y="124" width="100" height="100"/>
                                 <state key="normal" image="scissors.png"/>
+                                <connections>
+                                    <action selector="activateScissors:" destination="sfu-bc-KvN" eventType="touchUpInside" id="qb2-Hl-8G1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg5-bV-GRz">
                                 <rect key="frame" x="279" y="262" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLi-kC-jQq">
                                 <rect key="frame" x="279" y="392" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6J-Y9-x04">
                                 <rect key="frame" x="279" y="322" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -120,15 +129,20 @@
                             <constraint firstItem="dJc-H4-j7M" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="stp-RR-TS9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="computerChoiceLabel" destination="F6J-Y9-x04" id="BZ2-Uz-xwS"/>
+                        <outlet property="playerChoiceLabel" destination="jg5-bV-GRz" id="vTk-Ky-Zyc"/>
+                        <outlet property="resultLabel" destination="aLi-kC-jQq" id="DQZ-dF-qfA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIs-Rm-kSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1147" y="339"/>
         </scene>
-        <!--View Controller-->
+        <!--Recap View Controller-->
         <scene sceneID="otO-kc-BI7">
             <objects>
-                <viewController id="gwx-ZF-0PD" sceneMemberID="viewController">
+                <viewController id="gwx-ZF-0PD" customClass="RecapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ERm-1S-9PY"/>
                         <viewControllerLayoutGuide type="bottom" id="0eN-wn-7Oa"/>
