@@ -26,7 +26,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
-    // IBAction functions
+    // IBAction functions and supporting functions
     
     @IBAction func activateRock(sender: AnyObject) {
         determineOutcome(0)
@@ -78,6 +78,8 @@ class GameViewController: UIViewController {
             computerChoiceLabel.text = "Computer chose scissors"
         }
     }
+    
+    // override functions
     
     override func viewDidLoad() {
         super.viewDidLoad()

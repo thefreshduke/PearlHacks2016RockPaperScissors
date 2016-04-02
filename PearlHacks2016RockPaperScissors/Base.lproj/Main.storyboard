@@ -183,6 +183,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBT-jT-hmS">
+                                <rect key="frame" x="277" y="494" width="46" height="30"/>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="resetGameStats:" destination="gwx-ZF-0PD" eventType="touchUpInside" id="aJS-Er-uZ2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -190,11 +197,13 @@
                             <constraint firstItem="g3N-GN-qxJ" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="F1p-3N-Ee8"/>
                             <constraint firstItem="f9l-Ej-pk8" firstAttribute="top" secondItem="ERm-1S-9PY" secondAttribute="bottom" constant="122" id="GAg-Sl-G4e"/>
                             <constraint firstItem="hHm-T2-QqI" firstAttribute="top" secondItem="ZwK-8U-WbK" secondAttribute="bottom" constant="40" id="MJk-KG-iwz"/>
+                            <constraint firstItem="qBT-jT-hmS" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="UyN-rS-fYS"/>
                             <constraint firstItem="d79-4x-AE4" firstAttribute="top" secondItem="f9l-Ej-pk8" secondAttribute="bottom" constant="65" id="Xov-na-mKs"/>
                             <constraint firstItem="g3N-GN-qxJ" firstAttribute="top" secondItem="hHm-T2-QqI" secondAttribute="bottom" constant="40" id="bWQ-ac-yel"/>
                             <constraint firstItem="d79-4x-AE4" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="dPl-sB-KHf"/>
                             <constraint firstItem="ZwK-8U-WbK" firstAttribute="top" secondItem="d79-4x-AE4" secondAttribute="bottom" constant="48" id="gIs-Ac-6Cd"/>
                             <constraint firstItem="f9l-Ej-pk8" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="ipF-bX-HXy"/>
+                            <constraint firstItem="qBT-jT-hmS" firstAttribute="top" secondItem="g3N-GN-qxJ" secondAttribute="bottom" constant="40" id="nyh-dU-9hK"/>
                             <constraint firstItem="ZwK-8U-WbK" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="zpN-VT-UAf"/>
                         </constraints>
                     </view>
