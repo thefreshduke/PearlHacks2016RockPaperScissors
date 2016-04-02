@@ -64,7 +64,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJc-H4-j7M">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJc-H4-j7M">
                                 <rect key="frame" x="282" y="468" width="36" height="30"/>
                                 <state key="normal" title="QUIT"/>
                                 <connections>
@@ -124,9 +124,9 @@
                             <constraint firstItem="aLi-kC-jQq" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="ezT-BC-RNr"/>
                             <constraint firstItem="F6J-Y9-x04" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="k9c-S7-IaR"/>
                             <constraint firstItem="jg5-bV-GRz" firstAttribute="top" secondItem="bLT-lC-uAH" secondAttribute="bottom" constant="38" id="pbI-V8-842"/>
-                            <constraint firstItem="dJc-H4-j7M" firstAttribute="top" secondItem="aLi-kC-jQq" secondAttribute="bottom" constant="55" id="pi6-14-6X9"/>
                             <constraint firstItem="cF8-2D-ooh" firstAttribute="top" secondItem="tsu-v3-fuP" secondAttribute="bottom" constant="104" id="rpt-A8-D47"/>
                             <constraint firstItem="dJc-H4-j7M" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="stp-RR-TS9"/>
+                            <constraint firstItem="yQh-Am-d1e" firstAttribute="top" secondItem="dJc-H4-j7M" secondAttribute="bottom" constant="102" id="xrc-w8-NCq"/>
                         </constraints>
                     </view>
                     <connections>
