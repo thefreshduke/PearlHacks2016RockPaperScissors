@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5E551DD093CB12A452F81BA4C0147D01D4F9C808",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5E551DD093CB12A452F81BA4C0147D01D4F9C808" : 0,
+    "4A762B727C72E1EAA39EAEA3996B9BD9367C15B4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C5C341DC-910C-42AF-9D4D-94C47EBAD1DF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5E551DD093CB12A452F81BA4C0147D01D4F9C808" : "PearlHacks2016RockPaperScissors\/",
+    "4A762B727C72E1EAA39EAEA3996B9BD9367C15B4" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PearlHacks2016RockPaperScissors",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PearlHacks2016RockPaperScissors.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:thefreshduke\/PrimeNumberTutorial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A762B727C72E1EAA39EAEA3996B9BD9367C15B4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:thefreshduke\/PearlHacks2016RockPaperScissors.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5E551DD093CB12A452F81BA4C0147D01D4F9C808"
+    }
+  ]
+}

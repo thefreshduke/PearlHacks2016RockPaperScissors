@@ -52,10 +52,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Game View Controller-->
+        <!--View Controller-->
         <scene sceneID="Eqn-nm-u63">
             <objects>
-                <viewController id="sfu-bc-KvN" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController id="sfu-bc-KvN" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tsu-v3-fuP"/>
                         <viewControllerLayoutGuide type="bottom" id="yQh-Am-d1e"/>
@@ -64,28 +64,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcI-9A-MRr">
-                                <rect key="frame" x="281" y="401" width="38" height="30"/>
-                                <state key="normal" title="MAIN"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJc-H4-j7M">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJc-H4-j7M">
                                 <rect key="frame" x="282" y="468" width="36" height="30"/>
                                 <state key="normal" title="QUIT"/>
+                                <connections>
+                                    <segue destination="gwx-ZF-0PD" kind="show" id="V9n-KD-qdq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLT-lC-uAH">
-                                <rect key="frame" x="277" y="159" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLT-lC-uAH">
+                                <rect key="frame" x="250" y="124" width="100" height="100"/>
+                                <state key="normal" image="paper.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF8-2D-ooh">
-                                <rect key="frame" x="146" y="159" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF8-2D-ooh">
+                                <rect key="frame" x="120" y="124" width="100" height="100"/>
+                                <state key="normal" image="rock.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BO-71-cJF">
-                                <rect key="frame" x="411" y="159" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BO-71-cJF">
+                                <rect key="frame" x="380" y="124" width="100" height="100"/>
+                                <state key="normal" image="scissors.png"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg5-bV-GRz">
-                                <rect key="frame" x="279" y="319" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg5-bV-GRz">
+                                <rect key="frame" x="279" y="262" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLi-kC-jQq">
+                                <rect key="frame" x="279" y="392" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6J-Y9-x04">
+                                <rect key="frame" x="279" y="322" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -93,16 +104,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5BO-71-cJF" firstAttribute="top" secondItem="tsu-v3-fuP" secondAttribute="bottom" constant="139" id="4Hl-gc-HAh"/>
-                            <constraint firstItem="AcI-9A-MRr" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="5Wz-so-8le"/>
-                            <constraint firstItem="dJc-H4-j7M" firstAttribute="top" secondItem="AcI-9A-MRr" secondAttribute="bottom" constant="37" id="FX8-80-UaD"/>
-                            <constraint firstItem="bLT-lC-uAH" firstAttribute="leading" secondItem="cF8-2D-ooh" secondAttribute="trailing" constant="85" id="W3S-Ws-hhW"/>
-                            <constraint firstItem="bLT-lC-uAH" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="Yau-ge-ADf"/>
-                            <constraint firstItem="bLT-lC-uAH" firstAttribute="top" secondItem="tsu-v3-fuP" secondAttribute="bottom" constant="139" id="aMh-fW-QDr"/>
-                            <constraint firstItem="5BO-71-cJF" firstAttribute="leading" secondItem="bLT-lC-uAH" secondAttribute="trailing" constant="85" id="bsp-bj-Lll"/>
-                            <constraint firstItem="AcI-9A-MRr" firstAttribute="top" secondItem="tsu-v3-fuP" secondAttribute="bottom" constant="381" id="hpl-Et-EDK"/>
+                            <constraint firstItem="F6J-Y9-x04" firstAttribute="top" secondItem="jg5-bV-GRz" secondAttribute="bottom" constant="39" id="AoX-wO-HD9"/>
+                            <constraint firstItem="5BO-71-cJF" firstAttribute="top" secondItem="tsu-v3-fuP" secondAttribute="bottom" constant="104" id="Epk-rm-X4C"/>
+                            <constraint firstItem="bLT-lC-uAH" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="KeT-Sh-Tpx"/>
+                            <constraint firstItem="5BO-71-cJF" firstAttribute="leading" secondItem="bLT-lC-uAH" secondAttribute="trailing" constant="30" id="LgP-9Y-Gvs"/>
+                            <constraint firstItem="jg5-bV-GRz" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="ODf-mj-REb"/>
+                            <constraint firstItem="bLT-lC-uAH" firstAttribute="top" secondItem="tsu-v3-fuP" secondAttribute="bottom" constant="104" id="RMQ-sl-W0l"/>
+                            <constraint firstItem="bLT-lC-uAH" firstAttribute="leading" secondItem="cF8-2D-ooh" secondAttribute="trailing" constant="30" id="Uac-PM-Hvr"/>
+                            <constraint firstItem="aLi-kC-jQq" firstAttribute="top" secondItem="F6J-Y9-x04" secondAttribute="bottom" constant="49" id="biM-6x-geP"/>
+                            <constraint firstItem="aLi-kC-jQq" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="ezT-BC-RNr"/>
+                            <constraint firstItem="F6J-Y9-x04" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="k9c-S7-IaR"/>
+                            <constraint firstItem="jg5-bV-GRz" firstAttribute="top" secondItem="bLT-lC-uAH" secondAttribute="bottom" constant="38" id="pbI-V8-842"/>
+                            <constraint firstItem="dJc-H4-j7M" firstAttribute="top" secondItem="aLi-kC-jQq" secondAttribute="bottom" constant="55" id="pi6-14-6X9"/>
+                            <constraint firstItem="cF8-2D-ooh" firstAttribute="top" secondItem="tsu-v3-fuP" secondAttribute="bottom" constant="104" id="rpt-A8-D47"/>
                             <constraint firstItem="dJc-H4-j7M" firstAttribute="centerX" secondItem="jBK-Rt-xI7" secondAttribute="centerX" id="stp-RR-TS9"/>
-                            <constraint firstItem="cF8-2D-ooh" firstAttribute="top" secondItem="tsu-v3-fuP" secondAttribute="bottom" constant="139" id="weH-RF-pdl"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -110,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="1147" y="339"/>
         </scene>
-        <!--Recap View Controller-->
+        <!--View Controller-->
         <scene sceneID="otO-kc-BI7">
             <objects>
-                <viewController id="gwx-ZF-0PD" customClass="RecapViewController" sceneMemberID="viewController">
+                <viewController id="gwx-ZF-0PD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ERm-1S-9PY"/>
                         <viewControllerLayoutGuide type="bottom" id="0eN-wn-7Oa"/>
@@ -151,7 +166,13 @@
             <point key="canvasLocation" x="717" y="1126"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paper.png" width="100" height="100"/>
+        <image name="rock.png" width="100" height="100"/>
+        <image name="scissors.png" width="100" height="100"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OKt-R4-Wot"/>
+        <segue reference="V9n-KD-qdq"/>
+        <segue reference="Rr4-uE-Bu1"/>
     </inferredMetricsTieBreakers>
 </document>

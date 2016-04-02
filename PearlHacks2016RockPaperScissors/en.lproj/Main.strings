@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "MAIN"; ObjectID = "AcI-9A-MRr"; */
+"AcI-9A-MRr.normalTitle" = "MAIN";
+
+/* Class = "UILabel"; text = "ROCK PAPER SCISSORS"; ObjectID = "WV6-JQ-lsn"; */
+"WV6-JQ-lsn.text" = "ROCK PAPER SCISSORS";
+
+/* Class = "UIButton"; normalTitle = "MAIN"; ObjectID = "d79-4x-AE4"; */
+"d79-4x-AE4.normalTitle" = "MAIN";
+
+/* Class = "UIButton"; normalTitle = "QUIT"; ObjectID = "dJc-H4-j7M"; */
+"dJc-H4-j7M.normalTitle" = "QUIT";
+
+/* Class = "UIButton"; normalTitle = "PLAY"; ObjectID = "f9l-Ej-pk8"; */
+"f9l-Ej-pk8.normalTitle" = "PLAY";
+
+/* Class = "UIButton"; normalTitle = "STATS"; ObjectID = "j1E-wY-OZt"; */
+"j1E-wY-OZt.normalTitle" = "STATS";
+
+/* Class = "UIButton"; normalTitle = "PLAY"; ObjectID = "jep-La-yWN"; */
+"jep-La-yWN.normalTitle" = "PLAY";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jg5-bV-GRz"; */
+"jg5-bV-GRz.text" = "Label";
