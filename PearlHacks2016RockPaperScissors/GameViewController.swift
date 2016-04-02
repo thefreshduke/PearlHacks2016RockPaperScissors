@@ -10,15 +10,23 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    var playerChoice: Int = -1
+    // global variables
     
     var computerChoice: Int = -1
+    
+    var playerChoice: Int = -1
+    
+    var stats = NSUserDefaults.standardUserDefaults()
+    
+    // IBOutlet variables
     
     @IBOutlet weak var playerChoiceLabel: UILabel!
     
     @IBOutlet weak var computerChoiceLabel: UILabel!
     
     @IBOutlet weak var resultLabel: UILabel!
+    
+    // IBAction functions
     
     @IBAction func activateRock(sender: AnyObject) {
         determineOutcome(0)
@@ -35,6 +43,8 @@ class GameViewController: UIViewController {
         playerChoiceLabel.text = "You chose scissors"
     }
     
+    // Non-IBAction functions
+    
     func determineOutcome(playerChoice: Int) {
         computerChoice = Int(arc4random_uniform(3))
         
@@ -42,12 +52,18 @@ class GameViewController: UIViewController {
         
         if (playerChoice == computerChoice) {
             resultLabel.text = "DRAW"
+            let numDraws = stats.integerForKey("Draws")
+            stats.setInteger(numDraws + 1, forKey: "Draws")
         }
         else if ((playerChoice == 0 && computerChoice == 2) || (playerChoice == 1 && computerChoice == 0) || (playerChoice == 2 && computerChoice == 1)) {
             resultLabel.text = "WIN"
+            let numWins = stats.integerForKey("Wins")
+            stats.setInteger(numWins + 1, forKey: "Wins")
         }
         else {
             resultLabel.text = "LOSE"
+            let numLosses = stats.integerForKey("Losses")
+            stats.setInteger(numLosses + 1, forKey: "Losses")
         }
     }
     

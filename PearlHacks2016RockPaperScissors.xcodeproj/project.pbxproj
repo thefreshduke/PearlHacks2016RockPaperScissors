@@ -32,7 +32,6 @@
 		6F4B0BE71CAF8253003C5DE4 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rock.png; path = Images/rock.png; sourceTree = "<group>"; };
 		6F4B0BE81CAF8253003C5DE4 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scissors.png; path = Images/scissors.png; sourceTree = "<group>"; };
 		6F4B0BED1CAF85B5003C5DE4 /* RecapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecapViewController.swift; sourceTree = "<group>"; };
-		6F4B0BF21CAF877D003C5DE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +167,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6F4B0BD21CAF7337003C5DE4 /* Base */,
-				6F4B0BF21CAF877D003C5DE4 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,6 +306,7 @@
 				6F4B0BDE1CAF7337003C5DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

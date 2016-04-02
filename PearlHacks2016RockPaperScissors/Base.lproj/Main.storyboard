@@ -142,7 +142,7 @@
         <!--Recap View Controller-->
         <scene sceneID="otO-kc-BI7">
             <objects>
-                <viewController id="gwx-ZF-0PD" customClass="RecapViewController" sceneMemberID="viewController">
+                <viewController id="gwx-ZF-0PD" customClass="RecapViewController" customModule="PearlHacks2016RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ERm-1S-9PY"/>
                         <viewControllerLayoutGuide type="bottom" id="0eN-wn-7Oa"/>
@@ -165,15 +165,44 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="k2g-HB-leQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwK-8U-WbK">
+                                <rect key="frame" x="279" y="315" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHm-T2-QqI">
+                                <rect key="frame" x="279" y="375" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3N-GN-qxJ">
+                                <rect key="frame" x="279" y="433" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="hHm-T2-QqI" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="CcP-jD-Y3g"/>
+                            <constraint firstItem="g3N-GN-qxJ" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="F1p-3N-Ee8"/>
                             <constraint firstItem="f9l-Ej-pk8" firstAttribute="top" secondItem="ERm-1S-9PY" secondAttribute="bottom" constant="122" id="GAg-Sl-G4e"/>
+                            <constraint firstItem="hHm-T2-QqI" firstAttribute="top" secondItem="ZwK-8U-WbK" secondAttribute="bottom" constant="40" id="MJk-KG-iwz"/>
                             <constraint firstItem="d79-4x-AE4" firstAttribute="top" secondItem="f9l-Ej-pk8" secondAttribute="bottom" constant="65" id="Xov-na-mKs"/>
+                            <constraint firstItem="g3N-GN-qxJ" firstAttribute="top" secondItem="hHm-T2-QqI" secondAttribute="bottom" constant="40" id="bWQ-ac-yel"/>
                             <constraint firstItem="d79-4x-AE4" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="dPl-sB-KHf"/>
+                            <constraint firstItem="ZwK-8U-WbK" firstAttribute="top" secondItem="d79-4x-AE4" secondAttribute="bottom" constant="48" id="gIs-Ac-6Cd"/>
                             <constraint firstItem="f9l-Ej-pk8" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="ipF-bX-HXy"/>
+                            <constraint firstItem="ZwK-8U-WbK" firstAttribute="centerX" secondItem="VA0-Tu-Fpt" secondAttribute="centerX" id="zpN-VT-UAf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numDrawsLabel" destination="hHm-T2-QqI" id="5bt-KG-MYf"/>
+                        <outlet property="numLossesLabel" destination="g3N-GN-qxJ" id="2pL-oF-08D"/>
+                        <outlet property="numWinsLabel" destination="ZwK-8U-WbK" id="mUc-Gh-ylQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvh-EU-fWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
