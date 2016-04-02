@@ -20,14 +20,14 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
-    @IBAction func activatePaper(sender: AnyObject) {
-        determineOutcome(1)
-        playerChoiceLabel.text = "You chose paper"
-    }
-    
     @IBAction func activateRock(sender: AnyObject) {
         determineOutcome(0)
         playerChoiceLabel.text = "You chose rock"
+    }
+    
+    @IBAction func activatePaper(sender: AnyObject) {
+        determineOutcome(1)
+        playerChoiceLabel.text = "You chose paper"
     }
     
     @IBAction func activateScissors(sender: AnyObject) {
