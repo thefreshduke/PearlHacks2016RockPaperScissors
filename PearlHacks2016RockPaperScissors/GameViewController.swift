@@ -10,9 +10,9 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    var playerChoice: Int = 0
+    var playerChoice: Int = -1
     
-    var computerChoice: Int = 0
+    var computerChoice: Int = -1
     
     @IBOutlet weak var playerChoiceLabel: UILabel!
     
@@ -21,15 +21,46 @@ class GameViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func activatePaper(sender: AnyObject) {
-        playerChoice = 2
+        determineOutcome(1)
+        playerChoiceLabel.text = "You chose paper"
     }
     
     @IBAction func activateRock(sender: AnyObject) {
-        playerChoice = 1
+        determineOutcome(0)
+        playerChoiceLabel.text = "You chose rock"
     }
     
     @IBAction func activateScissors(sender: AnyObject) {
-        playerChoice = 3
+        determineOutcome(2)
+        playerChoiceLabel.text = "You chose scissors"
+    }
+    
+    func determineOutcome(playerChoice: Int) {
+        computerChoice = Int(arc4random_uniform(3))
+        
+        displayComputerChoice(computerChoice)
+        
+        if (playerChoice == computerChoice) {
+            resultLabel.text = "DRAW"
+        }
+        else if ((playerChoice == 0 && computerChoice == 2) || (playerChoice == 1 && computerChoice == 0) || (playerChoice == 2 && computerChoice == 1)) {
+            resultLabel.text = "WIN"
+        }
+        else {
+            resultLabel.text = "LOSE"
+        }
+    }
+    
+    func displayComputerChoice(computerChoice: Int) {
+        if (computerChoice == 0) {
+            computerChoiceLabel.text = "Computer chose rock"
+        }
+        else if (computerChoice == 1) {
+            computerChoiceLabel.text = "Computer chose paper"
+        }
+        else {
+            computerChoiceLabel.text = "Computer chose scissors"
+        }
     }
     
     override func viewDidLoad() {
