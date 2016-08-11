@@ -43,7 +43,7 @@ class GameViewController: UIViewController {
         playerChoiceLabel.text = "You chose scissors"
     }
     
-    // Non-IBAction functions
+    // non-IBAction functions
     
     func determineOutcome(playerChoice: Int) {
         computerChoice = Int(arc4random_uniform(3))

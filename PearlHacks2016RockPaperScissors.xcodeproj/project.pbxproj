@@ -13,10 +13,10 @@
 		6F4B0BD51CAF7337003C5DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B0BD41CAF7337003C5DE4 /* Assets.xcassets */; };
 		6F4B0BD81CAF7337003C5DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B0BD61CAF7337003C5DE4 /* LaunchScreen.storyboard */; };
 		6F4B0BE41CAF814D003C5DE4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B0BE31CAF814D003C5DE4 /* GameViewController.swift */; };
-		6F4B0BEA1CAF8253003C5DE4 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B0BE61CAF8253003C5DE4 /* paper.png */; };
 		6F4B0BEB1CAF8253003C5DE4 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B0BE71CAF8253003C5DE4 /* rock.png */; };
 		6F4B0BEC1CAF8253003C5DE4 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B0BE81CAF8253003C5DE4 /* scissors.png */; };
 		6F4B0BEE1CAF85B5003C5DE4 /* RecapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B0BED1CAF85B5003C5DE4 /* RecapViewController.swift */; };
+		6FE4B9AA1CB05CD700A7BD77 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FE4B9A91CB05CD700A7BD77 /* paper.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		6F4B0BD71CAF7337003C5DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F4B0BD91CAF7337003C5DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F4B0BE31CAF814D003C5DE4 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		6F4B0BE61CAF8253003C5DE4 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paper.png; path = Images/paper.png; sourceTree = "<group>"; };
 		6F4B0BE71CAF8253003C5DE4 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rock.png; path = Images/rock.png; sourceTree = "<group>"; };
 		6F4B0BE81CAF8253003C5DE4 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scissors.png; path = Images/scissors.png; sourceTree = "<group>"; };
 		6F4B0BED1CAF85B5003C5DE4 /* RecapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecapViewController.swift; sourceTree = "<group>"; };
+		6FE4B9A91CB05CD700A7BD77 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paper.png; path = Images/paper.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		6F4B0BCC1CAF7337003C5DE4 /* PearlHacks2016RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				6F4B0BE61CAF8253003C5DE4 /* paper.png */,
+				6FE4B9A91CB05CD700A7BD77 /* paper.png */,
 				6F4B0BE71CAF8253003C5DE4 /* rock.png */,
 				6F4B0BE81CAF8253003C5DE4 /* scissors.png */,
 				6F4B0BCD1CAF7337003C5DE4 /* AppDelegate.swift */,
@@ -137,9 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F4B0BEA1CAF8253003C5DE4 /* paper.png in Resources */,
 				6F4B0BEB1CAF8253003C5DE4 /* rock.png in Resources */,
 				6F4B0BEC1CAF8253003C5DE4 /* scissors.png in Resources */,
+				6FE4B9AA1CB05CD700A7BD77 /* paper.png in Resources */,
 				6F4B0BD81CAF7337003C5DE4 /* LaunchScreen.storyboard in Resources */,
 				6F4B0BD51CAF7337003C5DE4 /* Assets.xcassets in Resources */,
 				6F4B0BD31CAF7337003C5DE4 /* Main.storyboard in Resources */,
